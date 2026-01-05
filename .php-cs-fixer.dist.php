@@ -3,7 +3,9 @@
 $config = new PrestaShop\CodingStandards\CsFixer\Config();
 
 $config->setRules(array_merge($config->getRules(), [
-    'trailing_comma_in_multiline' => false,
+    'trailing_comma_in_multiline' => [
+        'elements' => ['arrays', 'array_destructuring', 'match'],
+    ],
 ]));
 
 /** @var \Symfony\Component\Finder\Finder $finder */
