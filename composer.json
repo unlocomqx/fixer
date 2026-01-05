@@ -1,0 +1,20 @@
+{
+  "name": "unloco/fixer",
+  "autoload": {
+    "psr-4": {
+      "Unloco\\Fixer\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Tuni-Soft",
+      "email": "amxmodx.unloco@gmail.com"
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7",
+    "friendsofphp/php-cs-fixer": "^3.39",
+    "prestashop/php-dev-tools": "^4.3"
+  }
+}
