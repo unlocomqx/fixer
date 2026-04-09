@@ -1,7 +1,10 @@
 <?php
 
+use PhpCsFixer\Runner\Parallel\ParallelConfigFactory;
+
 $config = new PhpCsFixer\Config('PrestaShop coding standard');
 $config->setRiskyAllowed(true);
+$config->setParallelConfig(ParallelConfigFactory::detect());
 
 $config->setRules([
     '@Symfony' => true,
