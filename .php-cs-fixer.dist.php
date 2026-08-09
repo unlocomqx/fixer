@@ -22,7 +22,9 @@ $config->setRules([
     'yoda_style' => false,
     'non_printable_character' => true,
     'no_superfluous_phpdoc_tags' => false,
-    'trailing_comma_in_multiline' => ['elements' => ['arrays', 'array_destructuring', 'match']],
+    'no_useless_else' => true,
+    'blank_line_after_opening_tag' => false,
+    'no_unneeded_control_parentheses' => ['statements' => ['break', 'clone', 'continue', 'echo_print', 'negative_instanceof', 'others', 'return', 'switch_case', 'yield', 'yield_from']],
 ]);
 
 /** @var \Symfony\Component\Finder\Finder $finder */
